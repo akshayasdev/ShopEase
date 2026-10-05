@@ -1,0 +1,575 @@
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+  width: 100%;
+  min-height: 680px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.hero-container {
+  position: relative;
+
+  max-width: 1280px;
+  min-height: 680px;
+
+  margin: 0 auto;
+  padding: 70px 32px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  gap: 60px;
+}
+
+/* =================================
+   LEFT CONTENT
+================================= */
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+
+  max-width: 650px;
+}
+
+.hero-badge {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 28px;
+  padding: 11px 18px;
+
+  background: #fef3c7;
+  color: #92400e;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(52px, 5vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  display: block;
+
+  color: #d97706;
+}
+
+.hero-content > p {
+  max-width: 610px;
+
+  margin: 30px 0;
+
+  color: #64748b;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 50px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  height: 56px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 0 25px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.hero-primary-btn {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.hero-primary-btn:hover {
+  background: #d97706;
+
+  transform: translateY(-2px);
+}
+
+.hero-secondary-btn {
+  border: 1px solid #d6d3d1;
+
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.hero-secondary-btn:hover {
+  border-color: #d97706;
+  color: #d97706;
+
+  transform: translateY(-2px);
+}
+
+/* =================================
+   STATS
+================================= */
+
+.hero-stats {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 55px;
+}
+
+.hero-stats > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.hero-stats strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 24px;
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.hero-stats span {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+}
+
+/* =================================
+   RIGHT VISUAL
+================================= */
+
+.hero-visual {
+  position: relative;
+
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =================================
+   YELLOW CIRCLE
+================================= */
+
+.hero-circle {
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: #fef3c7;
+
+  border-radius: 50%;
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+/* =================================
+   PRODUCT CARD
+================================= */
+
+.hero-product-card {
+  position: relative;
+
+  z-index: 2;
+
+  width: 380px;
+  min-height: 440px;
+
+  padding: 40px 35px 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #ffffff;
+
+  border: 1px solid #f1f5f9;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.12);
+
+  box-sizing: border-box;
+}
+
+/* =================================
+   PRODUCT ICON
+================================= */
+
+.hero-product-image {
+  width: 105px;
+  height: 105px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  margin-bottom: 55px;
+
+  background: #f8fafc;
+
+  border-radius: 18px;
+
+  color: #d97706;
+}
+
+/* =================================
+   PRODUCT INFORMATION
+================================= */
+
+.hero-product-info {
+  width: 100%;
+
+  text-align: center;
+}
+
+.hero-product-info > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #d97706;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.hero-product-info h3 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.hero-product-info p {
+  max-width: 280px;
+
+  margin: 0 auto;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =================================
+   FLOATING CARDS
+================================= */
+
+.floating-card {
+  position: absolute;
+
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 14px 17px;
+
+  background: #ffffff;
+
+  border: 1px solid #f1f5f9;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.10);
+
+  white-space: nowrap;
+}
+
+.floating-card > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.floating-card strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #0f172a;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.floating-card small {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+/* =================================
+   PREMIUM CARD
+================================= */
+
+.floating-card-one {
+  top: 48px;
+  right: -20px;
+
+  min-width: 165px;
+}
+
+/* =================================
+   FREE DELIVERY CARD
+================================= */
+
+.floating-card-two {
+  left: -35px;
+  bottom: 45px;
+
+  min-width: 195px;
+}
+
+/* =================================
+   RESPONSIVE - 1100px
+================================= */
+
+@media (max-width: 1100px) {
+  .hero-container {
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 58px;
+  }
+
+  .hero-stats {
+    gap: 35px;
+  }
+
+  .hero-product-card {
+    width: 350px;
+  }
+
+  .floating-card-one {
+    right: -5px;
+  }
+
+  .floating-card-two {
+    left: -10px;
+  }
+}
+
+/* =================================
+   RESPONSIVE - 900px
+================================= */
+
+@media (max-width: 900px) {
+  .hero-container {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    padding: 70px 25px;
+
+    gap: 60px;
+
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 700px;
+
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 500px;
+
+    width: 100%;
+  }
+
+  .floating-card-one {
+    right: 30px;
+  }
+
+  .floating-card-two {
+    left: 30px;
+  }
+}
+
+/* =================================
+   RESPONSIVE - 600px
+================================= */
+
+@media (max-width: 600px) {
+  .hero-container {
+    padding: 55px 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 43px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-content > p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-bottom: 40px;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 22px;
+  }
+
+  .hero-stats strong {
+    font-size: 20px;
+  }
+
+  .hero-stats span {
+    font-size: 11px;
+  }
+
+  .hero-visual {
+    min-height: 430px;
+  }
+
+  .hero-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-product-card {
+    width: 300px;
+    min-height: 360px;
+
+    padding: 30px 25px;
+  }
+
+  .hero-product-image {
+    width: 80px;
+    height: 80px;
+
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+
+  .hero-product-image svg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .hero-product-info h3 {
+    font-size: 21px;
+  }
+
+  .floating-card {
+    padding: 11px 13px;
+  }
+
+  .floating-card-one {
+    top: 15px;
+    right: 0;
+
+    min-width: 145px;
+  }
+
+  .floating-card-two {
+    left: 0;
+    bottom: 25px;
+
+    min-width: 170px;
+  }
+}
